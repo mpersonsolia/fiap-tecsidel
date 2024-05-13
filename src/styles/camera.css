@@ -1,0 +1,102 @@
+#hiddenDivBahia,
+#hiddenDivGoias,
+#hiddenDivMinas,
+#hiddenDivRio,
+#hiddenDivSP {
+	display: none;
+	width: 80%;
+	height: 35vh;
+	overflow: auto;
+}
+
+.tecsidel-camera {
+	height: 75vh;
+	overflow: auto;
+}
+
+.tecsidel-camera-state-card-display {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.tecnical-support {
+	overflow: auto;
+}
+
+.tecsidel-camera-state {
+	padding: 0.5rem 0 1rem 0;
+}
+
+.tecsidel-camera-state-toggle {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.tecsidel-camera-state-toggle:hover {
+	color: var(--color-gray);
+}
+
+/****************************************** CARD *********************************************/
+.tecsidel-camera-state-card {
+	padding: var(--card-padding);
+	border-radius: var(--card-border-radius);
+	margin-top: 1rem;
+	box-shadow: var(--box-shadow);
+	transition: all 300ms ease;
+	background: var(--color-primary);
+}
+
+.tecsidel-camera-state-card-address,
+.tecsidel-camera-state-card-status {
+	color: var(--color-white);
+}
+
+.tecsidel-camera-state-card-status {
+	display: flex;
+	justify-content: space-between;
+}
+
+/**************************************** TABLET STYLE ****************************************/
+@media only screen and (max-width: 768px) {
+	#hiddenDivBahia,
+	#hiddenDivGoias,
+	#hiddenDivMinas,
+	#hiddenDivRio,
+	#hiddenDivSP {
+		width: 63%;
+	}
+
+	.tecsidel-camera-h1 {
+		font-size: 1.4rem;
+	}
+
+	.tecsidel-camera-h2 {
+		font-size: 1.2rem;
+	}
+}
+
+/**************************************** MOBILE STYLE ****************************************/
+@media only screen and (max-width: 375px) {
+	#hiddenDivBahia,
+	#hiddenDivGoias,
+	#hiddenDivMinas,
+	#hiddenDivRio,
+	#hiddenDivSP {
+		width: 94%;
+	}
+
+	.tecsidel-camera-h1,
+	.tecsidel-camera {
+		margin-left: 1rem;
+	}
+
+	.tecsidel-camera-h1 {
+		font-size: 1.3rem;
+	}
+
+	.tecsidel-camera-h2 {
+		font-size: 1.1rem;
+	}
+}

@@ -1,0 +1,98 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tecsidel-login {
+	display: flex;
+	height: 100%;
+}
+
+.tecsidel-login-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	padding: 3rem;
+	background: var(--color-background);
+	border: solid 1px var(--color-primary);
+}
+
+.tecsidel-login-container-logo {
+	margin: 10rem 0 5rem 0;
+	width: 28rem;
+}
+
+.tecsidel-login-container-input {
+	display: flex;
+	flex-direction: column;
+	width: 28rem;
+}
+
+.tecsidel-login-container-input-email,
+.tecsidel-login-container-input-password {
+	margin-bottom: 0.5rem;
+	padding: 0.3rem;
+	height: 2.4rem;
+	border-radius: var(--border-radius-1);
+}
+
+.tecsidel-login-container-input-email:focus,
+.tecsidel-login-container-input-password:focus {
+	border: 1px solid var(--color-primary);
+}
+
+.tecsidel-login-container-input-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3rem 0 2rem 0;
+	padding: 0.5rem;
+	width: 100%;
+	cursor: pointer;
+	border-radius: var(--border-radius-1);
+	transition: all 300ms ease;
+	background: var(--color-primary);
+	color: var(--color-white);
+	box-shadow: 0 0.3rem 0.3rem var(--color-light);
+}
+
+.tecsidel-login-container-input-button:hover {
+	background: var(--color-primary-transparent);
+}
+
+.tecsidel-login-background {
+	position: relative;
+	flex: 2;
+}
+
+.tecsidel-login-background img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/**************************************** TABLET STYLE ****************************************/
+@media only screen and (max-width: 768px) {
+	.tecsidel-login-container-logo,
+	.tecsidel-login-container-input {
+		width: 17rem;
+	}
+}
+
+/**************************************** MOBILE STYLE ****************************************/
+@media only screen and (max-width: 375px) {
+	.tecsidel-login-background {
+		display: none;
+	}
+
+	.tecsidel-login-container-logo {
+		margin-top: 5rem;
+	}
+}

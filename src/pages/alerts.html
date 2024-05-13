@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/alerts.css" />
+		<link rel="stylesheet" href="../styles/index.css" />
+		<script type="text/javascript" src="../js/alerts.js"></script>
+	</head>
+	<body>
+		<h1 class="tecsidel-alerts-h1">Alertas</h1>
+		<div class="tecsidel-alerts">
+			<h2 class="tecsidel-alerts-h2">Listagem de Alertas dos Free Flows</h2>
+
+			<label class="tecsidel-alerts-select-label">Filtrar por status:</label>
+			<select id="tecsidel-alerts-select-status">
+				<option value="">Todos os Status</option>
+				<option value="Manutenção">Manutenção</option>
+				<option value="Operando">Operando</option>
+				<option value="Paralisado">Paralisado</option>
+			</select>
+
+			<div class="tecsidel-alerts-card-height">
+				<div class="tecsidel-alerts-card-overflow">
+					<div class="tecsidel-alerts-card">
+						<ul class="tecsidel-alerts-card-alert"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

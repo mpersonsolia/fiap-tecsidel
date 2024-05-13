@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+		/>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
+		<link rel="stylesheet" href="../styles/index.css" />
+		<link rel="stylesheet" href="../styles/camera.css" />
+		<script src="../js/camera.js"></script>
+		<script src="../js/index.js"></script>
+	</head>
+	<body>
+		<h1 class="tecsidel-camera-h1">Câmeras de Vigilância</h1>
+		<div class="tecsidel-camera">
+			<!------------------------------- BEGINNING BAHIA ------------------------------->
+			<div class="tecsidel-camera-state">
+				<a class="tecsidel-camera-state-toggle" onclick="toggleDivBahia()"
+					><span class="material-icons-sharp">chevron_right</span>
+					<h2 class="tecsidel-camera-h2">Bahia</h2></a
+				>
+				<div id="hiddenDivBahia">
+					<div class="tecsidel-camera-state-card-display">
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video01.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 324 - Rod. Engº. Vasco Filho km 105</h3>
+								<h4>FEIRA DE SANTANA/BA</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 886-BA</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video02.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 324 - Rod. Engº. Vasco Filho km 10</h3>
+								<h4>SALVADOR/BA</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 992-BA</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video03.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 324 - Rod. Engº. Vasco Filho km 88</h3>
+								<h4>VITÓRIA DA CONQUISTA/BA</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 031-BA</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------- END BAHIA ------------------------------->
+
+			<!------------------------------- BEGINNING GOIÁS ------------------------------->
+			<div class="tecsidel-camera-state">
+				<a class="tecsidel-camera-state-toggle" onclick="toggleDivGoias()"
+					><span class="material-icons-sharp">chevron_right</span>
+					<h2 class="tecsidel-camera-h2">Goiás</h2></a
+				>
+				<div id="hiddenDivGoias">
+					<div class="tecsidel-camera-state-card-display">
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video04.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 115 - Rod. Transbrasiliana km 785</h3>
+								<h4>ANÁPOLIS/GO</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 542-GO</p>
+								<card class="tecsidel-card danger-card">PARALISADA</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video05.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BBR 115 - Rod. Transbrasiliana km 23</h3>
+								<h4>GOIÂNIA/GO</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 134-GO</p>
+								<card class="tecsidel-card warning-card">MANUTENÇÃO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video06.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 115 - Rod. Transbrasiliana km 540</h3>
+								<h4>ITUMBIARA/GO</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 334-GO</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video08.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>GO 060 - Rod. G. S. Nascimento km 41</h3>
+								<h4>APARECIDA DE GOIÂNIA/GO</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 003-GO</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video09.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>GO 060 - Rod. G. S. Nascimento km 12</h3>
+								<h4>MONTES CLAROS DE GOIÁS/GO</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 911-GO</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------- END GOIÁS ------------------------------->
+
+			<!------------------------------- BEGINNING MINAS GERAIS ------------------------------->
+			<div class="tecsidel-camera-state">
+				<a class="tecsidel-camera-state-toggle" onclick="toggleDivMinas()"
+					><span class="material-icons-sharp">chevron_right</span>
+					<h2 class="tecsidel-camera-h2">Minas Gerais</h2></a
+				>
+				<div id="hiddenDivMinas">
+					<div class="tecsidel-camera-state-card-display">
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video10.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 040 - Rod. Pres. Juscelino K. km 31</h3>
+								<h4>BELO HORIZONTE/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 077-MG</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video11.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 040 - Rod. Pres. Juscelino K. km 35</h3>
+								<h4>CONSELHEIRO LAFAYETE/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 145-MG</p>
+								<card class="tecsidel-card warning-card">MANUTENÇÃO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video12.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 040 - Rod. Pres. Juscelino K. km 17</h3>
+								<h4>JUIZ DE FORA/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 060-MG</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video13.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 381 - Rod. Fernão Dias km 582</h3>
+								<h4>CONTAGEM/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 444-MG</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video14.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 381 - Rod. Fernão Dias km 35</h3>
+								<h4>POUSO ALEGRE/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 897-MG</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video15.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 116 - Rod. Presidente Dutra km 88</h3>
+								<h4>GOVERNADOR VALADARES/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 017-MG</p>
+								<card class="tecsidel-card danger-card">PARALISADA</card>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------- END MINAS GERAIS ------------------------------->
+
+			<!------------------------------- BEGINNING RIO DE JANEIRO ------------------------------->
+			<div class="tecsidel-camera-state">
+				<a class="tecsidel-camera-state-toggle" onclick="toggleDivRio()"
+					><span class="material-icons-sharp">chevron_right</span>
+					<h2 class="tecsidel-camera-h2">Rio de Janeiro</h2></a
+				>
+				<div id="hiddenDivRio">
+					<div class="tecsidel-camera-state-card-display">
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video16.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 101 - Rod. Gov. Mário Covas km 41</h3>
+								<h4>ITAGUAÍ/RJ</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 853-RJ</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video17.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 101 - Rod. Gov. Mário Covas km 333</h3>
+								<h4>MANGARATIBA/RJ</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 755-RJ</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video18.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 101 - Rod. Gov. Mário Covas km 73</h3>
+								<h4>PARATY/RJ</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 154-RJ</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video19.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 116 - Rod. Régis Bittencourt km 552</h3>
+								<h4>DUQUE DE CAXIAS/RJ</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 322-RJ</p>
+								<card class="tecsidel-card danger-card">PARALISADA</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video20.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 116 - Rod. Régis Bittencourt km 668</h3>
+								<h4>PETRÓPOLIS/MG</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 104-RJ</p>
+								<card class="tecsidel-card warning-card">MANUTENÇÃO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video21.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>BR 101 - Rod. Régis Bittencourt km 31</h3>
+								<h4>TERESÓPOLIS/RJ</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 033-RJ</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------- END RIO DE JANEIRO ------------------------------->
+
+			<!------------------------------- BEGINNING SÃO PAULO ------------------------------->
+			<div class="tecsidel-camera-state">
+				<a class="tecsidel-camera-state-toggle" onclick="toggleDivSP()"
+					><span class="material-icons-sharp">chevron_right</span>
+					<h2 class="tecsidel-camera-h2">São Paulo</h2></a
+				>
+				<div id="hiddenDivSP">
+					<div class="tecsidel-camera-state-card-display">
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video22.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 330 - Rod. Anhanguera km 85</h3>
+								<h4>CAMPINAS/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 891-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video23.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 330 - Rod. Anhanguera km 457</h3>
+								<h4>RIBEIRÃO PRETO/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 333-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video24.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 070 - Rod. Ayrton Senna km 22</h3>
+								<h4>GUARULHOS/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 187-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video25.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 070 - Rod. Ayrton Senna km 23</h3>
+								<h4>MOGI DAS CRUZES/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 589-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video26.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 348 - Rod. dos Bandeirantes km 258</h3>
+								<h4>JUNDIAÍ/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 048-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+
+						<div class="tecsidel-camera-state-card">
+							<div class="tecsidel-camera-state-card-video">
+								<video width="285" height="168" controls autoplay loop>
+									<source src="../img/video27.mp4" type="video/mp4" />
+								</video>
+							</div>
+							<div class="tecsidel-camera-state-card-address">
+								<h3>SP 348 - Rod. dos Bandeirantes km 03</h3>
+								<h4>SÃO PAULO/SP</h4>
+							</div>
+							<div class="tecsidel-camera-state-card-status">
+								<p class="tecsidel-camera-state-card-status-id">ID: 479-SP</p>
+								<card class="tecsidel-card success-card">OPERANDO</card>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------- END SÃO PAULO ------------------------------->
+		</div>
+	</body>
+</html>

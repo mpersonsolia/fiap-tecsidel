@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/freeFlow.css" />
+		<link rel="stylesheet" href="../styles/index.css" />
+	</head>
+	<body>
+		<h1 class="tecsidel-freeFlow-h1">Free Flows</h1>
+		<div class="tecsidel-freeFlow">
+			<h2 class="tecsidel-freeFlow-h2">Listagem de FreeFlows</h2>
+
+			<label for="tecsidel-freeFlow-label" class="tecsidel-freeFlow-label"
+				>Filtrar por Estado:</label
+			>
+			<select id="tecsidel-freeFlow-select-states">
+				<option value="">Todos os Estados</option>
+				<option value="Bahia">Bahia</option>
+				<option value="Goiás">Goiás</option>
+				<option value="Minas Gerais">Minas Gerais</option>
+				<option value="Rio de Janeiro">Rio de Janeiro</option>
+				<option value="São Paulo">São Paulo</option>
+			</select>
+
+			<div class="tecsidel-freeFlow-table-overflow">
+				<div class="tecsidel-freeFlow-table">
+					<table id="tecsidel-freeFlow-table-list">
+						<thead>
+							<tr>
+								<th>Estado</th>
+								<th>Cidade</th>
+								<th>ID</th>
+								<th>Local</th>
+								<th>Taxa Fixa</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="../js/freeFlow.js"></script>
+	</body>
+</html>

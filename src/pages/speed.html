@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../styles/speed.css" />
+		<link rel="stylesheet" href="../styles/index.css" />
+	</head>
+	<body>
+		<!------------------------------- SPEED TABLE ------------------------------->
+		<h1 class="tecsidel-speed-h1">Listagem</h1>
+		<div class="tecsidel-speed">
+			<h2 class="tecsidel-speed-h2">Listagem de Velocidade Média das Vias</h2>
+
+			<div class="tecsidel-speed-select">
+				<div class="tecsidel-speed-select-left">
+					<label for="tecsidel-speed-label" class="tecsidel-speed-label"
+						>Filtrar por Estado:</label
+					>
+					<select id="tecsidel-speed-select-states">
+						<option value="">Todos os Estados</option>
+						<option value="Bahia">Bahia</option>
+						<option value="Goiás">Goiás</option>
+						<option value="Minas Gerais">Minas Gerais</option>
+						<option value="Rio de Janeiro">Rio de Janeiro</option>
+						<option value="São Paulo">São Paulo</option>
+					</select>
+				</div>
+				<div class="tecsidel-speed-select-right">
+					<label for="tecsidel-speed-label" class="tecsidel-speed-label"
+						>Filtrar por operação:</label
+					>
+					<select id="tecsidel-speed-select-operation">
+						<option value="">Todos as Operações</option>
+						<option value="Sim">Sim</option>
+						<option value="Não">Não</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="tecsidel-speed-table-overflow">
+				<div class="tecsidel-speed-table">
+					<table id="tecsidel-speed-table-list">
+						<thead>
+							<tr>
+								<th>Data</th>
+								<th>Horário</th>
+								<th>ID</th>
+								<th>Estado</th>
+								<th>Cidade</th>
+								<th>Local</th>
+								<th>Velocidade Média</th>
+								<th>Operação</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/speedUpdates.js"></script>
+		<script src="../js/speed.js"></script>
+	</body>
+</html>
