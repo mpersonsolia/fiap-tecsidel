@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TECSIDEL</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" type="image/x-icon" href="src/img/favicon.png" />
+        <link rel="stylesheet" href="src/styles/index.css" />
+        <script src="src/js/index.js"></script>
+    </head>
+    <body onload="loadScreen()">
+        <div class="tecsidel-container">
+            <div class="tecsidel-topbar">
+                <div class="tecsidel-topbar-logo">
+                    <img src="src/img/logo2.png" alt="TecsidelLogo" />
+                </div>
+                <div class="tecsidel-topbar-profile">
+                    <div class="tecsidel-topbar-profile-info">
+                        <p class="tecsidel-topbar-profile-info-name">
+                            <b>Olá, Patrícia</b>
+                        </p>
+                        <p class="tecsidel-topbar-profile-info-user">Admin</p>
+                    </div>
+                    <div class="tecsidel-topbar-profile-picture">
+                        <img src="src/img/profile_photo.jpg" alt="ProfilePicture" />
+                    </div>
+                </div>
+            </div>
+            <a id="tecsidel-button-menu" onclick="toggleSidebar()">
+                <span class="material-icons-sharp tecsidel-dashboard-icon-menu"
+                    >menu</span
+                >
+            </a>
+            <div class="tecisdel-sidebar-main-column-display">
+                <div class="tecsidel-sidebar" id="tecsidel-sidebar">
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('dashboard')"
+                        id="link-button-dashboard"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >dashboard</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Dashboard</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('freeFlow')"
+                        id="link-button-freeFlow"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >no_crash</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Free Flows</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('speed')"
+                        id="link-button-speed"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >speed</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Velocidade</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('alerts')"
+                        id="link-button-alerts"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >report</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Alertas</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('camera')"
+                        id="link-button-camera"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >grid_view</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Câmeras</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        onclick="showScreen('support')"
+                        id="link-button-support"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >support_agent</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Suporte</h3>
+                    </a>
+                    <a
+                        class="tecsidel-sidebar-item"
+                        href="src/pages/login.html"
+                        id="link-button"
+                    >
+                        <span class="material-icons-sharp tecsidel-index-sidebar-icon"
+                            >logout</span
+                        >
+                        <h3 class="tecsidel-index-sidebar-title">Sair</h3>
+                    </a>
+                </div>
+                <main class="tecsidel-main-container">
+                    <div id="tecsidel-main"></div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
