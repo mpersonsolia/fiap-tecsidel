@@ -127,6 +127,8 @@
 	border-collapse: collapse;
 	background: var(--color-white);
 	border-radius: var(--card-border-radius);
+	height: 30vh;
+	overflow: auto;
 }
 
 .tecsidel-dashboard-updates-table th,
