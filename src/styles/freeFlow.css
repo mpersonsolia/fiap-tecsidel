@@ -88,7 +88,7 @@ select:hover {
 @media only screen and (max-width: 480px) {
 	.tecsidel-freeFlow-h1,
 	.tecsidel-freeFlow {
-		margin-left: 1rem;
+		margin: 0 1rem 0 1rem;
 	}
 
 	.tecsidel-freeFlow-h1 {
@@ -100,8 +100,7 @@ select:hover {
 	}
 
 	select {
-		width: 14rem;
-		margin-bottom: 0.5rem;
+		width: 19rem;
 	}
 
 	.tecsidel-freeFlow-table {
@@ -112,6 +111,10 @@ select:hover {
 
 	.tecsidel-freeFlow-label {
 		font-size: 0.88rem;
+	}
+
+	.tecsidel-speed-table {
+		height: 50vh;
 	}
 
 	#tecsidel-freeFlow-table-list th,
