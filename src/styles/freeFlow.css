@@ -22,9 +22,11 @@ select:hover {
 }
 
 .tecsidel-freeFlow-table {
-	height: 60vh;
-	overflow: auto;
+	overflow-x: auto;
 	border-radius: var(--card-border-radius);
+	height: 60vh;
+	width: 100%;
+	overflow-y: auto;
 }
 
 .tecsidel-fleeFlow-table table {
@@ -33,7 +35,6 @@ select:hover {
 }
 
 #tecsidel-freeFlow-table-list {
-	width: 100%;
 	border-collapse: collapse;
 	background-color: var(--color-white);
 	padding: 2rem;
@@ -69,6 +70,14 @@ select:hover {
 		font-size: 1.2rem;
 	}
 
+	.tecsidel-freeFlow-table-overflow {
+		width: 98%;
+	}
+
+	/* .tecsidel-freeFlow-table {
+		height: 100svh;
+	} */
+
 	#tecsidel-freeFlow-table-list th,
 	#tecsidel-freeFlow-table-list td {
 		height: 2.2rem;
@@ -96,6 +105,7 @@ select:hover {
 	}
 
 	.tecsidel-freeFlow-table {
+		width: 22rem;
 		border-radius: var(--card-border-radius);
 	}
 

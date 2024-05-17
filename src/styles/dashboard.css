@@ -125,6 +125,7 @@
 
 .tecsidel-dashboard-updates-table {
 	height: 30vh;
+	width: 100%;
 	overflow: auto;
 	border-radius: var(--card-border-radius);
 }

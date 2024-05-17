@@ -10,7 +10,7 @@
 	transition: all 300ms ease;
 	background: var(--color-white);
 	width: max-content;
-	height: 60vh;
+	height: 62vh;
 }
 
 .tecsidel-support-message-card:hover {
