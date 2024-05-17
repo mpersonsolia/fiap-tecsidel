@@ -9,7 +9,6 @@
 	box-shadow: var(--box-shadow);
 	transition: all 300ms ease;
 	background: var(--color-white);
-	/* background: red; */
 	width: max-content;
 	height: 61vh;
 }
@@ -178,6 +177,11 @@ textarea {
 
 	.tecsidel-support-message {
 		margin-right: 0.5rem;
+	}
+
+	.tecsidel-support-message-card {
+		height: 100%;
+		margin: 0.5rem 0 0.5rem 0;
 	}
 
 	.tecsidel-support-message-card-input-label {
