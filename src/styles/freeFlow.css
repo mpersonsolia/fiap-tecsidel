@@ -107,6 +107,7 @@ select:hover {
 	.tecsidel-freeFlow-table {
 		width: 22rem;
 		border-radius: var(--card-border-radius);
+		height: 55vh;
 	}
 
 	.tecsidel-freeFlow-label {

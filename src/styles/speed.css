@@ -127,6 +127,10 @@ select:hover {
 		margin-bottom: 0.5rem;
 	}
 
+	.tecsidel-speed-table {
+		height: 55vh;
+	}
+
 	#tecsidel-speed-table-list th,
 	#tecsidel-speed-table-list td {
 		width: calc(100% / 8);
