@@ -128,6 +128,7 @@
 	width: 100%;
 	overflow: auto;
 	border-radius: var(--card-border-radius);
+	background: var(--color-white);
 }
 
 .tecsidel-dashboard-updates-table table {
