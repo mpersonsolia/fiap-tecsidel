@@ -11,7 +11,7 @@
 	/* background: var(--color-white); */
 	background: red;
 	width: max-content;
-	height: 63vh;
+	height: 60vh;
 }
 
 .tecsidel-support-message-card:hover {
@@ -52,7 +52,7 @@ select {
 }
 
 textarea {
-	height: 10rem;
+	height: 8rem;
 }
 
 .tecsidel-support-message-card-button-div {
