@@ -103,7 +103,7 @@ select:hover {
 @media only screen and (max-width: 480px) {
 	.tecsidel-speed-h1,
 	.tecsidel-speed {
-		margin-left: 1rem;
+		margin: 0 1rem 0 1rem;
 	}
 
 	.tecsidel-speed-h1 {
@@ -114,6 +114,10 @@ select:hover {
 		font-size: 1.1rem;
 	}
 
+	select {
+		width: 6rem;
+	}
+
 	.tecsidel-speed-select {
 		flex-direction: column;
 	}
@@ -122,13 +126,8 @@ select:hover {
 		font-size: 0.88rem;
 	}
 
-	select {
-		width: 13rem;
-		margin-bottom: 0.5rem;
-	}
-
 	.tecsidel-speed-table {
-		height: 55vh;
+		height: 50vh;
 	}
 
 	#tecsidel-speed-table-list th,
