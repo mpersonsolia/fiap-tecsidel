@@ -8,8 +8,8 @@
 	margin-top: 0.5rem;
 	box-shadow: var(--box-shadow);
 	transition: all 300ms ease;
-	/* background: var(--color-white); */
-	background: red;
+	background: var(--color-white);
+	/* background: red; */
 	width: max-content;
 	height: 61vh;
 }
@@ -99,8 +99,7 @@ textarea {
 	margin-top: 0.5rem;
 	box-shadow: var(--box-shadow);
 	transition: all 300ms ease;
-	/* background: var(--color-white); */
-	background: red;
+	background: var(--color-white);
 	width: 13rem;
 	height: 10rem;
 	gap: 0.5rem;
