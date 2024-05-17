@@ -88,6 +88,10 @@ html {
 
 /**************************************** MOBILE STYLE ****************************************/
 @media only screen and (max-width: 480px) {
+	.tecsidel-login-container {
+		width: 100%;
+	}
+
 	.tecsidel-login-background {
 		display: none;
 	}
