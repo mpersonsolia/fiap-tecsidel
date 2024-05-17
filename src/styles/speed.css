@@ -33,7 +33,7 @@ select:hover {
 .tecsidel-speed-table {
 	overflow-x: auto;
 	border-radius: var(--card-border-radius);
-	height: 72vh;
+	height: 60vh;
 	overflow-y: auto;
 }
 
