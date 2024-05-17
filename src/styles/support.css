@@ -164,7 +164,7 @@ textarea {
 @media only screen and (max-width: 480px) {
 	.tecsidel-support-h1,
 	.tecsidel-support {
-		margin-left: 1rem;
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 	.tecsidel-support-h1 {
@@ -181,6 +181,7 @@ textarea {
 
 	.tecsidel-support-message-card {
 		height: 100%;
+		width: 30vh;
 	}
 
 	.tecsidel-support-message-card-input-label {
@@ -190,13 +191,13 @@ textarea {
 	input,
 	textarea,
 	select {
-		width: 19rem;
+		width: 12rem;
 		margin: 0;
 	}
 
 	input,
 	select {
-		line-height: 0.8rem;
+		line-height: 0.6rem;
 	}
 
 	textarea {
@@ -213,7 +214,7 @@ textarea {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 1rem;
+		padding: 0.5rem;
 		width: 6.8rem;
 		height: 7rem;
 		gap: 0.5rem;
