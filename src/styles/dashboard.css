@@ -322,13 +322,8 @@
 		margin-left: 0.5rem;
 	}
 
-	.tecsidel-dashboard-updates {
-		width: 22rem;
-		height: 15rem;
-	}
-
 	.tecsidel-dashboard-updates-table {
-		height: 13vh;
+		height: 10vh;
 	}
 
 	.tecsidel-dashboard-updates-table th,
