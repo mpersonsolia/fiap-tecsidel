@@ -161,7 +161,7 @@ textarea {
 }
 
 /**************************************** MOBILE STYLE ****************************************/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.tecsidel-support-h1,
 	.tecsidel-support {
 		margin-left: 1rem;
