@@ -26,12 +26,11 @@ select:hover {
 }
 
 .tecsidel-speed-table-overflow {
-	overflow: hidden;
+	overflow-x: auto;
 	border-radius: var(--card-border-radius);
 }
 
 .tecsidel-speed-table {
-	height: 100svh;
 	overflow: auto;
 	border-radius: var(--card-border-radius);
 }
@@ -86,7 +85,7 @@ select:hover {
 	}
 
 	.tecsidel-speed-table-overflow {
-		width: 98%;
+		width: 100%;
 	}
 
 	/* .tecsidel-speed-table {
@@ -133,7 +132,7 @@ select:hover {
 
 	#tecsidel-speed-table-list th,
 	#tecsidel-speed-table-list td {
-		width: calc(100% / 8);
+		width: auto;
 		font-size: 0.8rem;
 	}
 }
