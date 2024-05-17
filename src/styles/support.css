@@ -181,7 +181,6 @@ textarea {
 
 	.tecsidel-support-message-card {
 		height: 100%;
-		margin-bottom: 1rem;
 	}
 
 	.tecsidel-support-message-card-input-label {
@@ -218,9 +217,10 @@ textarea {
 		width: 6.8rem;
 		height: 7rem;
 		gap: 0.5rem;
+		margin-top: 1rem;
 	}
 
-	.tecsidel-suppoort-contacts-card-title {
+	.tecsidel-support-contacts-card-title {
 		font-size: 0.88rem;
 	}
 
