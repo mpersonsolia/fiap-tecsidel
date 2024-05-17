@@ -204,7 +204,7 @@ p {
 }
 
 /**************************************** MOBILE STYLE ****************************************/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.tecsidel-topbar {
 		display: none;
 	}
