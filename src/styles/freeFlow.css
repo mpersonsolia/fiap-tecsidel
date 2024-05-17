@@ -100,7 +100,7 @@ select:hover {
 	}
 
 	select {
-		width: 12rem;
+		width: 8rem;
 	}
 
 	.tecsidel-freeFlow-table {
@@ -114,7 +114,7 @@ select:hover {
 	}
 
 	.tecsidel-speed-table {
-		height: 48vh;
+		height: 41vh;
 	}
 
 	#tecsidel-freeFlow-table-list th,

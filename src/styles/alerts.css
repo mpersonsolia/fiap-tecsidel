@@ -142,7 +142,7 @@ label {
 @media only screen and (max-width: 480px) {
 	.tecsidel-alerts,
 	.tecsidel-alerts-h1 {
-		margin-left: 1rem;
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 	.tecsidel-alerts-h1 {
@@ -154,7 +154,7 @@ label {
 	}
 
 	select {
-		width: 14rem;
+		width: 8rem;
 		margin-bottom: 0rem;
 	}
 
@@ -168,7 +168,7 @@ label {
 	}
 
 	.tecsidel-alerts-card-alert {
-		height: calc(100vh - 5rem);
+		height: 32vh;
 	}
 
 	.tecsidel-alerts-card-info {
