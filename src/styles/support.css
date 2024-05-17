@@ -191,7 +191,7 @@ textarea {
 	input,
 	textarea,
 	select {
-		width: 14rem;
+		width: 16rem;
 		margin: 0;
 	}
 
@@ -214,20 +214,12 @@ textarea {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 0.3rem;
-		width: 6.8rem;
+		padding: 0.1rem;
+		width: 6rem;
 		height: 7rem;
 		gap: 0.5rem;
 		margin-top: 1rem;
 		font-size: 0.6rem;
-	}
-
-	.tecsidel-support-contacts-card-title {
-		font-size: 0.88rem;
-	}
-
-	.tecsidel-support-contacts-card-number {
-		font-size: 0.77rem;
 	}
 
 	.tecsidel-support-message-card-button {
