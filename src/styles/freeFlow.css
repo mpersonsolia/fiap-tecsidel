@@ -88,7 +88,7 @@ select:hover {
 @media only screen and (max-width: 480px) {
 	.tecsidel-freeFlow-h1,
 	.tecsidel-freeFlow {
-		margin: 0 1rem 0 1rem;
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 	.tecsidel-freeFlow-h1 {
@@ -100,13 +100,13 @@ select:hover {
 	}
 
 	select {
-		width: 15rem;
+		width: 12rem;
 	}
 
 	.tecsidel-freeFlow-table {
-		width: 22rem;
+		width: 23rem;
 		border-radius: var(--card-border-radius);
-		height: 55vh;
+		height: 50vh;
 	}
 
 	.tecsidel-freeFlow-label {
