@@ -48,9 +48,9 @@
 	border-radius: var(--card-border-radius);
 	padding: var(--card-padding);
 	box-shadow: 0 0.5rem 0.5rem var(--color-light);
-	width: 18rem;
-	margin: 0 1rem 1rem 0;
-	gap: 1rem;
+	width: 17.8rem;
+	margin: 0 0.5rem 0.5rem 0;
+	gap: 0.5rem;
 }
 
 .tecsidel-dashboard-cards-amount-card:hover,
@@ -78,9 +78,9 @@
 	border-radius: var(--card-border-radius);
 	padding: var(--card-padding);
 	box-shadow: 0 0.5rem 0.5rem var(--color-light);
-	width: 10rem;
-	margin: 0 1rem 1rem 0;
-	gap: 1rem;
+	width: 8rem;
+	margin: 0 0.5rem 0.5rem 0;
+	gap: 0.5rem;
 }
 
 .tecsidel-dashboard-operating-card-info {
