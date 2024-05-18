@@ -1,244 +1,242 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 
 :root {
-	--color-primary: #164357;
-	--color-primary-transparent: #164357ac;
-	--color-danger: #e86873;
-	--color-danger-transparent: #e868734a;
-	--color-success: #25a53a;
-	--color-success-transparent: #25a53a2d;
-	--color-warning: #ff9355;
-	--color-warning-transparent: #ff935540;
-	--color-white: #ffffff;
-	--color-dark: #363949;
-	--color-gray: #7d8da1;
-	--color-gray-select: #808080;
-	--color-light: #1643570c;
-	--color-background: #f6f6f9;
+    --color-primary: #164357;
+    --color-primary-transparent: #164357ac;
+    --color-danger: #e86873;
+    --color-danger-transparent: #e868734a;
+    --color-success: #25a53a;
+    --color-success-transparent: #25a53a2d;
+    --color-warning: #ff9355;
+    --color-warning-transparent: #ff935540;
+    --color-white: #ffffff;
+    --color-dark: #363949;
+    --color-gray: #7d8da1;
+    --color-gray-select: #808080;
+    --color-light: #1643570c;
+    --color-background: #f6f6f9;
 
-	--card-border-radius: 2rem;
-	--border-radius-1: 0.4rem;
-	--border-radius-2: 0.8rem;
-	--border-radius-3: 1.4rem;
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.4rem;
 
-	--card-padding: 1.2rem;
-	--padding-1: 1.2rem;
+    --card-padding: 1.2rem;
+    --padding-1: 1.2rem;
 
-	--box-shadow: 0 0.5rem 0.5rem var(--color-light);
+    --box-shadow: 0 0.5rem 0.5rem var(--color-light);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	appearance: none;
-	border: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 0.88rem;
-	user-select: none;
-	overflow-x: hidden;
-	background: var(--color-background);
-	color: var(--color-dark);
-	overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--color-background);
+    color: var(--color-dark);
+    overflow: hidden;
 }
 
 p {
-	font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 
 .tecsidel-main-container {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .danger {
-	color: var(--color-danger);
+    color: var(--color-danger);
 }
 
 .danger-card {
-	color: var(--color-danger);
-	background: var(--color-danger-transparent);
-	border: 1px solid var(--color-danger);
-	border-radius: var(--card-border-radius);
-	padding: 0.5rem;
+    color: var(--color-danger);
+    background: var(--color-danger-transparent);
+    border: 1px solid var(--color-danger);
+    border-radius: var(--card-border-radius);
+    padding: 0.5rem;
 }
 
 .danger-icon {
-	background: var(--color-danger);
+    background: var(--color-danger);
 }
 
 .success {
-	color: var(--color-success);
+    color: var(--color-success);
 }
 
 .success-card {
-	color: var(--color-success);
-	background: var(--color-success-transparent);
-	border: 1px solid var(--color-success);
-	border-radius: var(--card-border-radius);
-	padding: 0.5rem;
+    color: var(--color-success);
+    background: var(--color-success-transparent);
+    border: 1px solid var(--color-success);
+    border-radius: var(--card-border-radius);
+    padding: 0.5rem;
 }
 
 .success-icon {
-	background: var(--color-success);
+    background: var(--color-success);
 }
 
 .warning {
-	color: var(--color-warning);
+    color: var(--color-warning);
 }
 
 .warning-card {
-	color: var(--color-warning);
-	background: var(--color-warning-transparent);
-	border: 1px solid var(--color-warning);
-	border-radius: var(--card-border-radius);
-	padding: 0.5rem;
+    color: var(--color-warning);
+    background: var(--color-warning-transparent);
+    border: 1px solid var(--color-warning);
+    border-radius: var(--card-border-radius);
+    padding: 0.5rem;
 }
 
 .tecisdel-sidebar-main-column-display {
-	display: flex;
+    display: flex;
 }
 
 /**************************************** TOPBAR ****************************************/
 .tecsidel-topbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 1rem 0 1rem;
-	margin-bottom: 1rem;
-	background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1rem;
+    background: var(--color-white);
 }
 
 .tecsidel-topbar-logo img {
-	width: 12rem;
-	height: 2.2rem;
+    width: 12rem;
+    height: 2.2rem;
 }
 
 .tecsidel-topbar-profile {
-	display: flex;
-	gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .tecsidel-topbar-profile-picture {
-	width: 2.8rem;
-	height: 2.8rem;
-	border-radius: 50%;
-	overflow: hidden;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .tecsidel-topbar-profile-picture img {
-	width: 2.8rem;
-	height: 2.5rem;
+    width: 2.8rem;
+    height: 2.5rem;
 }
 
 /**************************************** SIDEBAR ****************************************/
 .tecsidel-sidebar {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	margin: 0.5rem 3rem 0 1rem;
-	width: 13rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0.5rem 3rem 0 1rem;
+    width: 13rem;
 }
 
 .tecsidel-dashboard-icon-menu {
-	display: none;
+    display: none;
 }
 
 .tecsidel-sidebar-item {
-	display: flex;
-	margin-bottom: 1rem;
-	margin-left: 2rem;
-	gap: 1rem;
-	align-items: center;
-	position: relative;
-	height: 3.5rem;
-	transition: all 300ms ease;
-	color: var(--color-gray);
-	cursor: pointer;
-	width: 15rem;
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.5rem;
+    transition: all 300ms ease;
+    color: var(--color-gray);
+    cursor: pointer;
+    width: 10rem;
 }
 
 .tecsidel-sidebar-item:hover {
-	color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .tecsidel-sidebar a.active {
-	background: var(--color-light);
-	color: var(--color-primary);
-	margin-left: 0;
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
 }
 
 .tecsidel-sidebar a.active:before {
-	content: '';
-	width: 0.375rem;
-	height: 100%;
-	background: var(--color-primary);
+    content: '';
+    width: 0.375rem;
+    height: 100%;
+    background: var(--color-primary);
 }
 
 .tecsidel-sidebar-item span {
-	transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 
 .tecsidel-sidebar-item.active span {
-	color: var(--color-primary);
-	margin-left: cal(1rem - 0.188rem);
+    color: var(--color-primary);
+    margin-left: cal(1rem - 0.188rem);
 }
 
 /**************************************** TABLET STYLE ****************************************/
 @media only screen and (max-width: 768px) {
-	.tecsidel-sidebar {
-		margin-right: 1rem;
-	}
-	.tecsidel-sidebar-item {
-		margin-left: 0;
-		width: 10rem;
-	}
+    .tecsidel-sidebar {
+        margin-right: 1rem;
+    }
+    .tecsidel-sidebar-item {
+        margin-left: 0;
+    }
 }
 
 /**************************************** MOBILE STYLE ****************************************/
 @media only screen and (max-width: 480px) {
-	.tecsidel-topbar {
-		display: none;
-	}
+    .tecsidel-topbar {
+        display: none;
+    }
 
-	.tecsidel-dashboard-icon-menu {
-		display: flex;
-		cursor: pointer;
-	}
+    .tecsidel-dashboard-icon-menu {
+        display: flex;
+        cursor: pointer;
+    }
 
-	.tecsidel-sidebar {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: var(--color-white);
-		margin: 1.6rem 0 0 0;
-		box-shadow: var(--box-shadow);
-		width: 10rem;
-	}
+    .tecsidel-sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: var(--color-white);
+        margin: 1.6rem 0 0 0;
+        box-shadow: var(--box-shadow);
+        width: 10rem;
+    }
 
-	.tecsidel-index-sidebar-icon {
-		display: none;
-	}
+    .tecsidel-index-sidebar-icon {
+        display: none;
+    }
 
-	.tecsidel-index-sidebar-title {
-		font-size: 0.88rem;
-		margin-left: 0.5rem;
-	}
+    .tecsidel-index-sidebar-title {
+        font-size: 0.88rem;
+        margin-left: 0.5rem;
+    }
 
-	.tecsidel-sidebar-item {
-		height: 2.5rem;
-	}
+    .tecsidel-sidebar-item {
+        height: 2.5rem;
+    }
 
-	.tecsidel-sidebar.open {
-		display: block;
-	}
+    .tecsidel-sidebar.open {
+        display: block;
+    }
 }
