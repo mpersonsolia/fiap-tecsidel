@@ -1,4 +1,12 @@
+.tecsidel-dashboard {
+    display: grid;
+    grid-template-areas:
+        'title title title'
+        'rec rec quad';
+}
+
 .tecsidel-dashboard-h2 {
+    grid-area: title;
     margin-bottom: 0.5rem;
 }
 
@@ -29,23 +37,18 @@
     font-family: 'Titilium Web', sans-serif;
 }
 
+/* Dashboard */
+
 .tecsidel-dashboards-cards-display {
+    grid-area: rec;
     display: flex;
     justify-content: space-around;
-}
-
-.tecsidel-dashboard-cards {
-    display: flex;
-    flex-direction: column;
-}
-
-.tecsidel-dashboard-cards-amount-display,
-.tecsidel-dashboard-cards-vehicle-display {
-    display: flex;
+    flex-wrap: wrap;
 }
 
 .tecsidel-dashboard-cards-amount-card,
 .tecsidel-dashboard-cards-vehicles-card {
+    flex-basis: 30%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -53,14 +56,23 @@
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     box-shadow: 0 0.5rem 0.5rem var(--color-light);
-    width: 17.8rem;
     margin: 0 0.5rem 0.5rem 0;
     gap: 0.5rem;
+    min-width: 14rem;
 }
 
 .tecsidel-dashboard-cards-amount-card:hover,
 .tecsidel-dashboard-cards-vehicles-card:hover {
     box-shadow: none;
+}
+
+.tecsidel-dashboard-cards-amount-card-info h3,
+.tecsidel-dashboard-cards-vehicles-card-info h3 {
+    font-size: 0.8rem;
+}
+
+.tecsidel-dashboard-amount {
+    font-size: 1.2rem;
 }
 
 .tecsidel-dashboard-icon-js {
@@ -71,6 +83,7 @@
 }
 
 .tecsidel-dashboard-operating {
+    grid-area: quad;
     display: flex;
     flex-wrap: wrap;
 }
@@ -83,9 +96,11 @@
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     box-shadow: 0 0.5rem 0.5rem var(--color-light);
-    width: 8rem;
+    max-width: 10rem;
+    min-width: 8rem;
     margin: 0 0.5rem 0.5rem 0;
     gap: 0.5rem;
+    max-height: 8rem;
 }
 
 .tecsidel-dashboard-operating-card-info {
@@ -145,59 +160,40 @@
 
 /******************************* TABLET STYLE *******************************/
 @media only screen and (max-width: 768px) {
-    .tecsidel-dashboard-h1 {
-        font-size: 1.4rem;
-    }
-
-    .tecsidel-dashboard-h2 {
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-    }
-
-    .tecsidel-dashboard-h3 {
-        font-size: 1rem;
-    }
-
-    .tecsidel-dashboard-cards {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .tecsidel-dashboard-operating {
+    .tecsidel-dashboard {
         display: grid;
-    }
-
-    .tecsidel-dashboard-cards-amount-display,
-    .tecsidel-dashboard-cards-vehicle-display {
-        display: flex;
-        flex-direction: column;
+        grid-template-areas:
+            'title title title'
+            'rec rec rec'
+            'quad quad quad';
     }
 
     .tecsidel-dashboard-cards-amount-card,
     .tecsidel-dashboard-cards-vehicles-card {
         padding: 0.5rem;
-        width: 12rem;
         margin: 0 0.8rem 0.8rem 0;
         gap: 0.5rem;
+        min-width: 12rem;
     }
 
-    .tecsidel-dashboard-operating-card {
-        padding: 0.5rem;
-        width: 8rem;
-        margin: 0 0.8rem 0.8rem 0;
-        gap: 0.5rem;
+    .tecsidel-dashboard-operating {
+        justify-content: center;
+    }
+
+    .tecsidel-dashboard-operating-card-info h3 {
+        font-size: 0.8rem;
+    }
+
+    .tecsidel-dashboard-operating-card-info h1 {
+        font-size: 1rem;
     }
 
     .tecsidel-tablet-total {
         display: none;
     }
 
-    .tecsidel-dashboard-amount {
-        font-size: 1.2rem;
-    }
-
     .tecsidel-dashboard-icon-js {
-        padding-right: 1rem;
+        padding-right: 0.5rem;
         color: var(--color-white);
         padding: 4px;
         margin-left: 0.3rem;
@@ -213,27 +209,6 @@
 
     .tecsidel-dashboard-h2 {
         margin-bottom: 0.5rem;
-    }
-
-    .tecsidel-dashboard-tablet {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .tecsidel-dashboard-tablet-card {
-        display: flex;
-        align-items: center;
-        background: var(--color-white);
-        border-radius: var(--card-border-radius);
-        box-shadow: 0 0.5rem 0.5rem var(--color-light);
-        padding: 0.8rem;
-        margin: 0 2rem 0.5rem 0;
-    }
-
-    .tecsidel-dashboard-tablet-info {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
     }
 
     .tecsidel-dashboard-updates {
@@ -270,11 +245,6 @@
         background: var(--color-light);
     }
 
-    .tecsidel-dashboard-cards {
-        display: flex;
-        flex-direction: row;
-    }
-
     .tecsidel-dashboard-cards-amount-card,
     .tecsidel-dashboard-cards-vehicles-card,
     .tecsidel-dashboard-operating-card {
@@ -298,8 +268,12 @@
     }
 
     .tecsidel-dashboard-operating-mobile {
+        display: block;
+    }
+
+    .tecsidel-dashboard-operating-mobile-group {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
     }
 
     .tecsidel-dashboard-mobile-info {
