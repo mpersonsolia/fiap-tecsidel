@@ -1,308 +1,194 @@
-.tecsidel-dashboard {
-    display: grid;
-    grid-template-areas:
-        'title title title'
-        'rec rec quad';
+.tecsidel-dashboard-calendar {
+	display: inline-block;
+	border-radius: var(--border-radius-1);
+	margin-top: 1rem;
+	padding: 0.5rem 1.6rem;
+	background: var(--color-light);
+}
+
+.tecsidel-dashboard-calendar-container input[type='date'] {
+	background: transparent;
+	color: var(--color-dark);
 }
 
 .tecsidel-dashboard-h2 {
-    grid-area: title;
-    margin-bottom: 0.5rem;
+	margin: 1rem 0 0.5rem 0;
 }
 
-.tecsidel-calendar {
-    display: inline-block;
-    border-radius: var(--border-radius-1);
-    margin-top: 1rem;
-    padding: 0.5rem 1.6rem;
-    background: var(--color-light);
+.tecsidel-dashboard-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
-
-.tecsidel-calendar input[type='date'] {
-    background: transparent;
-    color: var(--color-dark);
-}
-
-.tecsidel-dashboard-calendar {
-    display: inline-block;
-    border-radius: var(--border-radius-1);
-    margin: 1rem 0 1rem 0;
-    padding: 0.5rem 1.6rem;
-    background: var(--color-light);
-}
-
-.tecsidel-dashboard-calendar input[type='date'] {
-    background: transparent;
-    color: var(--color-dark);
-    font-family: 'Titilium Web', sans-serif;
-}
-
-/* Dashboard */
 
 .tecsidel-dashboards-cards-display {
-    grid-area: rec;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
 }
 
-.tecsidel-dashboard-cards-amount-card,
-.tecsidel-dashboard-cards-vehicles-card {
-    flex-basis: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    box-shadow: 0 0.5rem 0.5rem var(--color-light);
-    margin: 0 0.5rem 0.5rem 0;
-    gap: 0.5rem;
-    min-width: 14rem;
+.tecsidel-dashboard-cards-amount,
+.tecsidel-dashboard-cards-vehicles {
+	display: flex;
 }
 
-.tecsidel-dashboard-cards-amount-card:hover,
-.tecsidel-dashboard-cards-vehicles-card:hover {
-    box-shadow: none;
+.tecsidel-dashboard-cards-amount-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: var(--color-white);
+	border-radius: var(--card-border-radius);
+	padding: var(--card-padding);
+	box-shadow: 0 0.5rem 0.5rem var(--color-light);
+	margin: 0 0.5rem 0.5rem 0;
+	gap: 0.5rem;
+	width: 18rem;
+	height: 8rem;
 }
 
-.tecsidel-dashboard-cards-amount-card-info h3,
-.tecsidel-dashboard-cards-vehicles-card-info h3 {
-    font-size: 0.8rem;
+.tecsidel-dashboard-cards-amount-card-info-js {
+	padding-right: 1rem;
+	border-radius: 50%;
+	color: var(--color-white);
+	padding: 7px;
 }
 
-.tecsidel-dashboard-amount {
-    font-size: 1.2rem;
+.tecsidel-dashboard-cards-operating {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.tecsidel-dashboard-icon-js {
-    padding-right: 1rem;
-    border-radius: 50%;
-    color: var(--color-white);
-    padding: 7px;
+.tecsidel-dashboard-cards-operating-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: var(--color-white);
+	border-radius: var(--card-border-radius);
+	padding: var(--card-padding);
+	box-shadow: 0 0.5rem 0.5rem var(--color-light);
+	margin: 0 0.5rem 0.5rem 0;
+	gap: 0.5rem;
+	width: 8rem;
+	height: 8rem;
 }
 
-.tecsidel-dashboard-operating {
-    grid-area: quad;
-    display: flex;
-    flex-wrap: wrap;
+.tecsidel-dashboard-cards-operating-card-info {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.tecsidel-dashboard-operating-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    box-shadow: 0 0.5rem 0.5rem var(--color-light);
-    max-width: 10rem;
-    min-width: 8rem;
-    margin: 0 0.5rem 0.5rem 0;
-    gap: 0.5rem;
-    max-height: 8rem;
+.tecsidel-dashboard-table {
+	overflow: auto;
 }
 
-.tecsidel-dashboard-operating-card-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.tecsidel-dashboard-table-information {
+	overflow-x: auto;
+	border-radius: var(--card-border-radius);
+	background: var(--color-white);
+	padding: 0.5rem;
+	width: calc(100% - 2rem);
 }
 
-.tecsidel-dashboard-mobile,
-.tecsidel-dashboard-mobile,
-.tecsidel-dashboard-icon-mobile,
-.tecsidel-dashboard-icon-js-mobile,
-.tecsidel-dashboard-operating-mobile,
-.tecsidel-dashboard-operating-card-mobile,
-.tecsidel-dashboard-operating-card-info-mobile,
-.tecsidel-dashboard-operating-card-mobile,
-.tecsidel-dashboard-tablet {
-    display: none;
+.tecsidel-dashboard-table-information table {
+	width: 100%;
+	border-collapse: collapse;
 }
 
-.tecsidel-dashboard-updates {
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-.tecsidel-dashboard-updates-title {
-    margin-bottom: 1rem;
-}
-
-.tecsidel-dashboard-updates {
-    overflow: auto;
-}
-
-.tecsidel-dashboard-updates-overflow {
-    overflow: hidden;
-    border-radius: var(--card-border-radius);
-}
-
-.tecsidel-dashboard-updates-table {
-    width: 98%;
-    overflow-x: auto;
-    border-radius: var(--card-border-radius);
-    background: var(--color-white);
-}
-
-.tecsidel-dashboard-updates-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tecsidel-dashboard-updates-table th,
-.tecsidel-dashboard-updates-table td {
-    height: 2rem;
-    text-align: center;
-    border-bottom: 1px solid var(--color-light);
+.tecsidel-dashboard-table-information th,
+.tecsidel-dashboard-table-information td {
+	height: 2rem;
+	text-align: center;
+	border-bottom: 1px solid var(--color-light);
 }
 
 /******************************* TABLET STYLE *******************************/
 @media only screen and (max-width: 768px) {
-    .tecsidel-dashboard {
-        display: grid;
-        grid-template-areas:
-            'title title title'
-            'rec rec rec'
-            'quad quad quad';
-    }
+	.tecsidel-dashboard {
+		overflow: auto;
+		height: calc(90vh - 13rem);
+	}
 
-    .tecsidel-dashboard-cards-amount-card,
-    .tecsidel-dashboard-cards-vehicles-card {
-        padding: 0.5rem;
-        margin: 0 0.8rem 0.8rem 0;
-        gap: 0.5rem;
-        min-width: 12rem;
-    }
+	.tecsidel-dashboard-cards {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 
-    .tecsidel-dashboard-operating {
-        justify-content: center;
-    }
+	.tecsidel-dashboards-cards-display {
+		flex-direction: row;
+	}
 
-    .tecsidel-dashboard-operating-card-info h3 {
-        font-size: 0.8rem;
-    }
+	.tecsidel-dashboard-cards-amount,
+	.tecsidel-dashboard-cards-vehicles {
+		display: flex;
+		flex-direction: column;
+	}
 
-    .tecsidel-dashboard-operating-card-info h1 {
-        font-size: 1rem;
-    }
+	.tecsidel-dashboard-cards-operating {
+		display: flex;
+		flex-direction: row;
+	}
 
-    .tecsidel-tablet-total {
-        display: none;
-    }
+	.tecsidel-dashboard-cards-amount-card {
+		width: 17rem;
+	}
 
-    .tecsidel-dashboard-icon-js {
-        padding-right: 0.5rem;
-        color: var(--color-white);
-        padding: 4px;
-        margin-left: 0.3rem;
-    }
+	.tecsidel-dashboard-cards-amount-card-info-value,
+	.tecsidel-dashboard-cards-operating-card-info h1 {
+		font-size: 1.6rem;
+	}
 
-    .tecsidel-dashboard-calendar {
-        display: inline-block;
-        border-radius: var(--border-radius-1);
-        margin-top: 0.3rem;
-        padding: 0.3rem;
-        background: var(--color-light);
-    }
+	.tecsidel-dashboard-h1 {
+		font-size: 1.4rem;
+	}
 
-    .tecsidel-dashboard-h2 {
-        margin-bottom: 0.5rem;
-    }
-
-    .tecsidel-dashboard-updates {
-        width: 98%;
-    }
+	.tecsidel-dashboard-h2 {
+		font-size: 1.2rem;
+	}
 }
 
-/**************************************** MOBILE STYLE ****************************************/
+/******************************* MOBILE STYLE *******************************/
 @media only screen and (max-width: 480px) {
-    .tecsidel-dashboard-h1,
-    .tecsidel-dashboard-calendar,
-    .tecsidel-dashboard {
-        margin-left: 1rem;
-    }
+	.tecsidel-dashboard {
+		overflow: auto;
+		height: calc(90vh - 10rem);
+		margin-left: 0.5rem;
+	}
 
-    .tecsidel-dashboard-h1 {
-        font-size: 1.3rem;
-    }
+	.tecsidel-dashboard-cards {
+		display: grid;
+	}
 
-    .tecsidel-dashboard-h2 {
-        font-size: 1.1rem;
-        margin-bottom: 0.3rem;
-    }
+	.tecsidel-dashboard-cards-amount-card {
+		gap: 0.3rem;
+		width: auto;
+	}
 
-    .tecsidel-dashboard-h3 {
-        font-size: 0.9rem;
-    }
+	.tecsidel-dashboard-cards-operating-card {
+		width: auto;
+		height: auto;
+	}
 
-    .tecsidel-dashboard-calendar {
-        display: inline-block;
-        border-radius: var(--border-radius-1);
-        margin-top: 0.3rem;
-        padding: 0.3rem;
-        background: var(--color-light);
-    }
+	.tecsidel-dashboard-cards-operating-card-info small {
+		display: none;
+	}
 
-    .tecsidel-dashboard-cards-amount-card,
-    .tecsidel-dashboard-cards-vehicles-card,
-    .tecsidel-dashboard-operating-card {
-        display: none;
-    }
+	.tecsidel-dashboard-cards-amount-card-info-value,
+	.tecsidel-dashboard-cards-operating-card-info h1 {
+		font-size: 1.2rem;
+	}
 
-    .tecsidel-dashboard-mobile {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0.5rem;
-    }
+	.tecsidel-dashboard-h1 {
+		font-size: 1.1rem;
+	}
 
-    .tecsidel-dashboard-mobile-card {
-        display: flex;
-        align-items: center;
-        background: var(--color-white);
-        border-radius: var(--card-border-radius);
-        box-shadow: 0 0.5rem 0.5rem var(--color-light);
-        padding: 0.6rem;
-        margin-bottom: 0.5rem;
-    }
+	.tecsidel-dashboard-h2 {
+		font-size: 0.9rem;
+	}
 
-    .tecsidel-dashboard-operating-mobile {
-        display: block;
-    }
+	.tecsidel-dashboard-h3 {
+		font-size: 0.8rem;
+	}
 
-    .tecsidel-dashboard-operating-mobile-group {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tecsidel-dashboard-mobile-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tecsidel-dashboard-icon-mobile {
-        display: contents;
-    }
-
-    .tecsidel-dashboard-icon-js {
-        padding-right: 1rem;
-        border-radius: 50%;
-        color: var(--color-white);
-        padding: 4px;
-        font-size: 1rem;
-        margin-left: 0.5rem;
-    }
-
-    .tecsidel-dashboard-updates-table th,
-    .tecsidel-dashboard-updates-table td {
-        padding: 6px;
-        font-size: 0.7rem;
-    }
-
-    .tecsidel-dashboard-cards-vehicle-display {
-        display: flex;
-        flex-direction: row;
-    }
+	.material-icons-sharp {
+		font-size: 1rem;
+	}
 }

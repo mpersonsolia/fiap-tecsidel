@@ -23,7 +23,7 @@ speedUpdates.forEach((update) => {
 	document.querySelector('table tbody').appendChild(tr);
 });
 
-/************************** SPEED STATE SELECT **************************/
+/************************** SPEED SELECT **************************/
 document.addEventListener('DOMContentLoaded', function () {
 	var selectedState = document.getElementById('tecsidel-speed-select-states');
 	var selectedOperation = document.getElementById(
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	selectedState.addEventListener('change', function () {
 		var selectedStateFilter = selectedState.value;
 
-		// Filtrar operações com base no estado selecionado
 		var uniqueOperations = new Set();
 		var linhas = tabelaFlows.querySelectorAll('tbody tr');
 		linhas.forEach(function (linha) {
@@ -46,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 
-		// Atualizar o select de operações
 		selectedOperation.innerHTML =
 			'<option value="">Selecione uma Operação</option>';
 		uniqueOperations.forEach(function (operation) {
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			selectedOperation.appendChild(option);
 		});
 
-		// Filtrar a tabela com base no estado selecionado
 		linhas.forEach(function (linha) {
 			var stateColumn = linha.cells[3].textContent.trim();
 			if (selectedStateFilter === '' || selectedStateFilter === stateColumn) {
