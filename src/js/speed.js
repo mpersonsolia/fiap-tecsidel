@@ -1,24 +1,3 @@
-/************************** SPEED STATE SELECT **************************/
-document.addEventListener('DOMContentLoaded', function () {
-	var selectedState = document.getElementById('tecsidel-speed-select-states');
-	var tabelaFlows = document.getElementById('tecsidel-speed-table-list');
-
-	selectedState.addEventListener('change', function () {
-		var selectedStateFilter = selectedState.value;
-
-		var linhas = tabelaFlows.querySelectorAll('tbody tr');
-		linhas.forEach(function (linha) {
-			var stateColumn = linha.cells[3].textContent.trim();
-
-			if (selectedStateFilter === '' || selectedStateFilter === stateColumn) {
-				linha.style.display = '';
-			} else {
-				linha.style.display = 'none';
-			}
-		});
-	});
-});
-
 /************************** SPEED STATE OPERATION **************************/
 speedUpdates.forEach((update) => {
 	const tr = document.createElement('tr');
@@ -44,22 +23,63 @@ speedUpdates.forEach((update) => {
 	document.querySelector('table tbody').appendChild(tr);
 });
 
+/************************** SPEED STATE SELECT **************************/
 document.addEventListener('DOMContentLoaded', function () {
+	var selectedState = document.getElementById('tecsidel-speed-select-states');
 	var selectedOperation = document.getElementById(
 		'tecsidel-speed-select-operation'
 	);
 	var tabelaFlows = document.getElementById('tecsidel-speed-table-list');
 
+	selectedState.addEventListener('change', function () {
+		var selectedStateFilter = selectedState.value;
+
+		// Filtrar operações com base no estado selecionado
+		var uniqueOperations = new Set();
+		var linhas = tabelaFlows.querySelectorAll('tbody tr');
+		linhas.forEach(function (linha) {
+			var stateColumn = linha.cells[3].textContent.trim();
+			var operationColumn = linha.cells[7].textContent.trim();
+
+			if (selectedStateFilter === '' || selectedStateFilter === stateColumn) {
+				uniqueOperations.add(operationColumn);
+			}
+		});
+
+		// Atualizar o select de operações
+		selectedOperation.innerHTML =
+			'<option value="">Selecione uma Operação</option>';
+		uniqueOperations.forEach(function (operation) {
+			var option = document.createElement('option');
+			option.value = operation;
+			option.textContent = operation;
+			selectedOperation.appendChild(option);
+		});
+
+		// Filtrar a tabela com base no estado selecionado
+		linhas.forEach(function (linha) {
+			var stateColumn = linha.cells[3].textContent.trim();
+			if (selectedStateFilter === '' || selectedStateFilter === stateColumn) {
+				linha.style.display = '';
+			} else {
+				linha.style.display = 'none';
+			}
+		});
+	});
+
 	selectedOperation.addEventListener('change', function () {
+		var selectedStateFilter = selectedState.value;
 		var selectedOperationFilter = selectedOperation.value;
 
 		var linhas = tabelaFlows.querySelectorAll('tbody tr');
 		linhas.forEach(function (linha) {
-			var stateColumn = linha.cells[7].textContent.trim();
+			var stateColumn = linha.cells[3].textContent.trim();
+			var operationColumn = linha.cells[7].textContent.trim();
 
 			if (
-				selectedOperationFilter === '' ||
-				selectedOperationFilter === stateColumn
+				(selectedStateFilter === '' || selectedStateFilter === stateColumn) &&
+				(selectedOperationFilter === '' ||
+					selectedOperationFilter === operationColumn)
 			) {
 				linha.style.display = '';
 			} else {
